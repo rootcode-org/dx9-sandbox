@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{811b9a27-a07b-3525-a244-1cdda58498f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="entity">
+      <UniqueIdentifier>{c48bb37e-a082-374d-9e50-d3d2e75dbe33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics">
+      <UniqueIdentifier>{1c2375dd-b250-372f-972d-c2b2820f4a82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{017e4762-6e25-3471-861a-102b5b9ed871}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="code\main.cpp" />
+    <ClCompile Include="code\precompiled.cpp" />
+    <ClInclude Include="code\precompiled.h" />
+    <ClCompile Include="code\core\heap.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClInclude Include="code\core\heap.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClCompile Include="code\core\keyboard.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClInclude Include="code\core\keyboard.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="code\core\list.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="code\core\map.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClCompile Include="code\core\mouse.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClInclude Include="code\core\mouse.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClCompile Include="code\core\new.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClInclude Include="code\core\new.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClCompile Include="code\core\stack.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClInclude Include="code\core\stack.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="code\core\tree.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClCompile Include="code\core\window.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClInclude Include="code\core\window.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClCompile Include="code\entity\camera.cpp">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClInclude Include="code\entity\camera.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClCompile Include="code\entity\entity.cpp">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClInclude Include="code\entity\entity.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClCompile Include="code\entity\entity_manager.cpp">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClInclude Include="code\entity\entity_manager.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClCompile Include="code\entity\plank.cpp">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClInclude Include="code\entity\plank.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClCompile Include="code\entity\sphere.cpp">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClInclude Include="code\entity\sphere.h">
+      <Filter>entity</Filter>
+    </ClInclude>
+    <ClCompile Include="code\graphics\d3d9.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClInclude Include="code\graphics\d3d9.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClCompile Include="code\graphics\vertex.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClInclude Include="code\graphics\vertex.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClCompile Include="code\graphics\viewport.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClInclude Include="code\graphics\viewport.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClCompile Include="code\math\algebra.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClInclude Include="code\math\algebra.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClCompile Include="code\math\bezier.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClInclude Include="code\math\bezier.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClCompile Include="code\math\matrix.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClInclude Include="code\math\matrix.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="code\math\plane.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClCompile Include="code\math\polar.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClInclude Include="code\math\polar.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClCompile Include="code\math\quaternion.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClInclude Include="code\math\quaternion.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClCompile Include="code\math\vector.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClInclude Include="code\math\vector.h">
+      <Filter>math</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

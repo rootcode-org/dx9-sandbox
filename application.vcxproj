@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="15.0">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F4B9E223-257D-49AB-8E1B-CD524AE394D8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>application</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)_debug</TargetName>
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(SolutionDir).cache\runtime\</OutDir>
+    <IntDir>$(SolutionDir).cache\intermediate\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_debug</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(SolutionDir).cache\runtime\</OutDir>
+    <IntDir>$(SolutionDir).cache\intermediate\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_WINDOWS;_WIN32_WINNT=0x0A00;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>code</AdditionalIncludeDirectories>
+      <runtimeLibrary>MultiThreadedDebug</runtimeLibrary>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <runtimeTypeInfo>true</runtimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <Optimization>Disabled</Optimization>
+      <StringPooling>true</StringPooling>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <CallingConvention>FastCall</CallingConvention>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(DXSDK_DIR)lib\x86</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_WINDOWS;_WIN32_WINNT=0x0A00;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>code</AdditionalIncludeDirectories>
+      <StringPooling>true</StringPooling>
+      <runtimeLibrary>MultiThreaded</runtimeLibrary>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(DXSDK_DIR)lib\x86</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <LinkTimeCodeGeneration>UseFastLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="code\main.cpp" />
+    <ClCompile Include="code\precompiled.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClInclude Include="code\precompiled.h" />
+    <ClCompile Include="code\core\heap.cpp" />
+    <ClInclude Include="code\core\heap.h" />
+    <ClCompile Include="code\core\keyboard.cpp" />
+    <ClInclude Include="code\core\keyboard.h" />
+    <ClInclude Include="code\core\list.h" />
+    <ClInclude Include="code\core\map.h" />
+    <ClCompile Include="code\core\mouse.cpp" />
+    <ClInclude Include="code\core\mouse.h" />
+    <ClCompile Include="code\core\new.cpp" />
+    <ClInclude Include="code\core\new.h" />
+    <ClCompile Include="code\core\stack.cpp" />
+    <ClInclude Include="code\core\stack.h" />
+    <ClInclude Include="code\core\tree.h" />
+    <ClCompile Include="code\core\window.cpp" />
+    <ClInclude Include="code\core\window.h" />
+    <ClCompile Include="code\entity\camera.cpp" />
+    <ClInclude Include="code\entity\camera.h" />
+    <ClCompile Include="code\entity\entity.cpp" />
+    <ClInclude Include="code\entity\entity.h" />
+    <ClCompile Include="code\entity\entity_manager.cpp" />
+    <ClInclude Include="code\entity\entity_manager.h" />
+    <ClCompile Include="code\entity\plank.cpp" />
+    <ClInclude Include="code\entity\plank.h" />
+    <ClCompile Include="code\entity\sphere.cpp" />
+    <ClInclude Include="code\entity\sphere.h" />
+    <ClCompile Include="code\graphics\d3d9.cpp" />
+    <ClInclude Include="code\graphics\d3d9.h" />
+    <ClCompile Include="code\graphics\vertex.cpp" />
+    <ClInclude Include="code\graphics\vertex.h" />
+    <ClCompile Include="code\graphics\viewport.cpp" />
+    <ClInclude Include="code\graphics\viewport.h" />
+    <ClCompile Include="code\math\algebra.cpp" />
+    <ClInclude Include="code\math\algebra.h" />
+    <ClCompile Include="code\math\bezier.cpp" />
+    <ClInclude Include="code\math\bezier.h" />
+    <ClCompile Include="code\math\matrix.cpp" />
+    <ClInclude Include="code\math\matrix.h" />
+    <ClInclude Include="code\math\plane.h" />
+    <ClCompile Include="code\math\polar.cpp" />
+    <ClInclude Include="code\math\polar.h" />
+    <ClCompile Include="code\math\quaternion.cpp" />
+    <ClInclude Include="code\math\quaternion.h" />
+    <ClCompile Include="code\math\vector.cpp" />
+    <ClInclude Include="code\math\vector.h" />
+  </ItemGroup>
+</Project>

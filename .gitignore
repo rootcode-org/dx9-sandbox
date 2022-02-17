@@ -1,0 +1,12 @@
+.cache
+.idea
+.vs
+ipch
+*.sdf
+*.opensdf
+*.vc.db
+*.vc.vc.opendb
+*.vcxproj.user
+*.pyc
+*.pyo
+.DS_Store
